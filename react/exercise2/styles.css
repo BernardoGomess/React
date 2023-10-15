@@ -1,0 +1,44 @@
+body {
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image {
+    padding: 10pt;
+    background-color: aqua;
+}
+
+.image:hover {
+    transform: rotate(-10deg) scale(1.5);
+    transition: transform 0.3s linear;
+}
+
+@media screen and (max-width: 1050px) {
+    body {
+        background-color: aqua;
+    }
+
+    #container {
+        width: 90vw;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .image {
+        padding: 10pt;
+        background-color: tomato;
+    }
+}

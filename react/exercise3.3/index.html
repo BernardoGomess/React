@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Getting Info</title>
+
+</head>
+
+<body>
+    <form>
+        <label>Name:</label> <input type="text" id="name">
+        <br>
+        <br>
+        <label>Phone:</label> <input type="number" id="phone">
+        <br>
+        <br>
+        <label>Email:</label> <input type="email" id="email">
+        <br>
+        <br>
+        <label>Birthday:</label> <input type="date" id="birthday">
+        <br>
+        <br>
+        <label>Gender:</label>
+        <br>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Female</label>
+        <br>
+        <br>
+        <label>Adress:</label>
+        <textarea id="adress"></textarea>
+        <br>
+        <br>
+        <label>Academic degree:</label>
+        <select>
+        <option id="masters" value="Masters">Masters</option>
+        <option id="bachelor" value="Bachelor">Bachelor</option>
+        </select>
+        <br>
+        <br>
+        <label>Hobbies</label>
+        <br>
+        <label>Sports</label><input id="sports" type="checkbox">
+        <br>
+        <label>Books</label><input id="books" type="checkbox">
+        <br>
+        <label>Films</label><input id="films" type="checkbox">
+        <br>
+        <label>Trips</label><input id="trips" type="checkbox">
+        <br>
+        <label>Others</label><input id="others" type="checkbox">
+        <br>
+        <br>
+        <button id="Register" value="Register" onclick="getForm(this.form)">Register</button>
+        
+    </form>
+
+<script src="submit.js"> </script>
+
+</body>
+
+</html>
